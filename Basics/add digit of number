@@ -18,3 +18,27 @@ int main()
                   
          return 0;
 }
+
+// recrusive method
+/*
+#include <bits/stdc++.h>
+using namespace std;
+
+int sumofdigit(int n)
+{
+         return n == 0 ? 0: n%10 + sumofdigit(n/10);
+}
+
+int main()
+{
+         int t;
+         cin >> t;
+         while(t--)
+         {
+                  int n;
+                  cin >> n;
+                  cout << sumofdigit(n);
+         }
+         return 0;
+}
+*/
