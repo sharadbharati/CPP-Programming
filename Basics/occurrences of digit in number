@@ -1,0 +1,22 @@
+#include <bits/stdc++.h> 
+using namespace std;
+
+int main() 
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        int n, c=0;
+        cin >> n;
+        while (n>0)
+            {
+                c = (n%10 == 4) ? c+1 : c;
+                n /= 10;
+            }
+        cout << c << '\n';
+    }
+    return 0;
+}
