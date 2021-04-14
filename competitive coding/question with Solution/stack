@@ -1,0 +1,74 @@
+/*
+You are given a sequence of numbers of size N.
+You have to find if there is a way to insert + or - operator in between the numbers so that the result equals K.
+
+Input
+The first line of input contains two integers N and K.
+The next line of input contains N space- separated integers depicting the values of the sequence.
+
+Constraints:-
+1 <= N <= 20
+-10^15 <= K <= 10^15
+0 <= Numbers <=10^13
+
+Sample Input:-
+4 4
+1 2 3 4
+
+Sample Output:-
+YES
+
+Sample Input:-
+4 1
+1 2 3 4
+
+Sample Output:-
+NO
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+
+#define ll long long
+
+int main()
+{
+    ll n,k;
+    cin>>n>>k;
+    ll a[n];
+    for(int i=0; i<n; i++)
+        cin>>a[i];
+
+    stack <ll> s1, s2;
+    s1.push(0);
+    for(int i=0; i<n; i++)
+    {
+        while(!s1.empty())
+        {
+            int x = s1.top();
+            s1.pop();
+            s2.push(x-a[i]);
+            s2.push(x+a[i]);
+        }
+        while(!s2.empty())
+        {
+            int y = s2.top();
+            s1.push(y);
+            s2.pop();
+        }
+    }
+
+    while(!s1.empty())
+    {
+        int x = s1.top();
+        s1.pop();
+        if(x==k)
+        {
+            cout<<"YES";
+            return 0;
+        }
+    }
+    cout<<"NO";
+
+    return 0;
+}
