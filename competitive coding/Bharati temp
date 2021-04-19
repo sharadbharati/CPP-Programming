@@ -1,6 +1,6 @@
 #include <bits/stdc++.h> 
 using namespace std;
-# define fast ios_base::sync_with_stdio(false); cin.tie(NULL);
+# define fast ios_base::sync_with_stdio(false); cin.tie(NULL);cout.tie(NULL);
 # define ll long long
 #define mod 1000000007
 #define test ll t; cin >> t; while(t--)
