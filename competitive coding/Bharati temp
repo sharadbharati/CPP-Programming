@@ -1,9 +1,9 @@
 #include <bits/stdc++.h> 
 using namespace std;
-# define fast ios_base::sync_with_stdio(false); cin.tie(NULL);cout.tie(NULL);
+# define fastio ios_base::sync_with_stdio(false); cin.tie(NULL);cout.tie(NULL);
 # define ll long long
 #define mod 1000000007
-#define test ll t; cin >> t; while(t--)
+#define testcase ll t; cin >> t; while(t--)
 
 ll rev_num(ll n){ll rev=0; while(n != 0) {rev = (rev*10) + n%10; n /= 10; } return rev;}
 
@@ -17,8 +17,8 @@ ll ncr(ll n, ll r) { ll ncr = fact(n) / (fact(r) * fact(n - r)); return ncr; } /
 
 int main() 
 {
-    fast
-    test
+    fastio
+    testcase
     {
     
     }
