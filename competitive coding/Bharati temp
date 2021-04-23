@@ -1,7 +1,7 @@
 #include <bits/stdc++.h> 
 using namespace std;
 #define fastio ios_base::sync_with_stdio(false); cin.tie(NULL);cout.tie(NULL);
-#define fastime srand(chrono::high_resolution_clock::now().time_since_epoch().count());
+#define fasttime srand(chrono::high_resolution_clock::now().time_since_epoch().count());
 #define ll long long
 #define mod 1000000007
 #define testcase ll t; cin >> t; while(t--)
