@@ -5,6 +5,7 @@ using namespace std;
 #define ll long long
 #define mod 1000000007
 #define testcase ll t; cin >> t; while(t--)
+#define psieve void sieve(){ memset(prime, true, sizeof(prime)); for(ll p=2; p*p<=maxn; p++) if (prime[p]) for (ll i=p*2; i<=maxn; i+= p) prime[i] = false; }
 
 ll rev_num(ll n){ll rev=0; while(n != 0) {rev = (rev*10) + n%10; n /= 10; } return rev;}
 
